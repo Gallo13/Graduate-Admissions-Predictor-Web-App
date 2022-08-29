@@ -1,0 +1,43 @@
+html
+    {
+        background-image:url({{ url_for(‘static’, filename='images/particle_background.png') }})
+        background-size: cover;
+    }
+body
+    {
+        font-family: sans-serif;
+        height: 700px;
+        background-color: blue; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, blue, yellow);
+    }
+form
+    {
+        background-color:rgba(0,180,255,0.4);
+        margin: 0 auto;
+        width:350px;
+    }
+td
+    {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+input[type=number]
+    {
+        width: 100%;
+        padding: 10px 5px;
+    }
+button
+    {
+        background-color: #008CBA;
+        border-radius: 4px;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100%;
+    }
