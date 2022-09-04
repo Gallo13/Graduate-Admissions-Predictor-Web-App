@@ -9,7 +9,7 @@ import pickle
 
 
 app = Flask(__name__)
-model= pickle.load(open("C:/Users/Gallo/Jupyter/admission_model.pkl", 'rb'))
+model= pickle.load(open('admission_model.pkl', 'rb'))
 
 @app.route('/admission')
 def index():
