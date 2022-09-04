@@ -11,7 +11,7 @@ import pickle
 app = Flask(__name__)
 model= pickle.load(open('admission_model.pkl', 'rb'))
 
-@app.route('/admission')
+@app.route('/')
 def index():
     return render_template("index.html")
 
